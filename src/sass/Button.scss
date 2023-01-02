@@ -1,0 +1,30 @@
+@use './_variables.scss' as v;
+
+.button__box {
+  position: relative;
+  
+  .button {
+    background-color: v.$color1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 32px;
+  }
+
+  .button__shadow {
+    width: 60px;
+    height: 60px;
+    background-color: v.$color2;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    z-index: -1;
+  }
+
+  :active {
+    transform: translateY(4.5px);
+  }
+}
